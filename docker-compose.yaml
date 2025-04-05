@@ -3,8 +3,8 @@ services:
     image: 'mongo:latest'
     environment:
       - 'MONGO_INITDB_DATABASE=model_ecommerce'
-      - 'MONGO_INITDB_ROOT_USERNAME=admin'
-      - 'MONGO_INITDB_ROOT_PASSWORD=123'
+      - 'MONGO_INITDB_ROOT_USERNAME=${USERNAME}'
+      - 'MONGO_INITDB_ROOT_PASSWORD=${PASSWORD}'
     ports:
       - '27018:27017'
   rabbitmq:
